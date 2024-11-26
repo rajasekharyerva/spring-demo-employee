@@ -13,7 +13,8 @@ public class H2ConsoleConfig {
 
     @Bean(initMethod = "start", destroyMethod = "stop")
     public Server h2WebConsoleServer() throws SQLException {
-        return Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8080");
+        // Change port to 8082 or 80
+        return Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082");
     }
 }
 
