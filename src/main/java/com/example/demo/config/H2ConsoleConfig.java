@@ -16,6 +16,5 @@ public class H2ConsoleConfig {
         // Change port to 8082 or 80
         return Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082", "-tcpAllowOthers", "-tcpServerDaemon");
     }
-    }
 }
 
